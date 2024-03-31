@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74927AC12BB9C2DA00C76221 /* ViewTubeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC02BB9C2DA00C76221 /* ViewTubeAppApp.swift */; };
-		74927AC32BB9C2DA00C76221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC22BB9C2DA00C76221 /* ContentView.swift */; };
+		74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */; };
+		74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */; };
 		74927AC52BB9C2E100C76221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74927AC42BB9C2E100C76221 /* Assets.xcassets */; };
 		74927AC82BB9C2E100C76221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74927AC72BB9C2E100C76221 /* Preview Assets.xcassets */; };
+		74927AD02BB9C55000C76221 /* LocalRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927ACF2BB9C55000C76221 /* LocalRoomView.swift */; };
+		74927AD22BB9C56A00C76221 /* PrivateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AD12BB9C56A00C76221 /* PrivateRoomView.swift */; };
+		74927AD42BB9C58E00C76221 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AD32BB9C58E00C76221 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74927ABD2BB9C2DA00C76221 /* ViewTubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74927AC02BB9C2DA00C76221 /* ViewTubeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTubeAppApp.swift; sourceTree = "<group>"; };
-		74927AC22BB9C2DA00C76221 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTubeApp.swift; sourceTree = "<group>"; };
+		74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewViewTube.swift; sourceTree = "<group>"; };
 		74927AC42BB9C2E100C76221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74927AC72BB9C2E100C76221 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74927ACF2BB9C55000C76221 /* LocalRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRoomView.swift; sourceTree = "<group>"; };
+		74927AD12BB9C56A00C76221 /* PrivateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateRoomView.swift; sourceTree = "<group>"; };
+		74927AD32BB9C58E00C76221 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,8 @@
 		74927ABF2BB9C2DA00C76221 /* ViewTubeApp */ = {
 			isa = PBXGroup;
 			children = (
-				74927AC02BB9C2DA00C76221 /* ViewTubeAppApp.swift */,
-				74927AC22BB9C2DA00C76221 /* ContentView.swift */,
+				74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */,
+				74927ACE2BB9C53800C76221 /* Screens */,
 				74927AC42BB9C2E100C76221 /* Assets.xcassets */,
 				74927AC62BB9C2E100C76221 /* Preview Content */,
 			);
@@ -65,6 +71,41 @@
 				74927AC72BB9C2E100C76221 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74927ACE2BB9C53800C76221 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */,
+				74927AD62BB9C5B600C76221 /* PrivateRoom */,
+				74927AD52BB9C59A00C76221 /* LocalRoom */,
+				74927AD72BB9C5CB00C76221 /* Message */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		74927AD52BB9C59A00C76221 /* LocalRoom */ = {
+			isa = PBXGroup;
+			children = (
+				74927ACF2BB9C55000C76221 /* LocalRoomView.swift */,
+			);
+			path = LocalRoom;
+			sourceTree = "<group>";
+		};
+		74927AD62BB9C5B600C76221 /* PrivateRoom */ = {
+			isa = PBXGroup;
+			children = (
+				74927AD12BB9C56A00C76221 /* PrivateRoomView.swift */,
+			);
+			path = PrivateRoom;
+			sourceTree = "<group>";
+		};
+		74927AD72BB9C5CB00C76221 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				74927AD32BB9C58E00C76221 /* MessageView.swift */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74927AC32BB9C2DA00C76221 /* ContentView.swift in Sources */,
-				74927AC12BB9C2DA00C76221 /* ViewTubeAppApp.swift in Sources */,
+				74927AD02BB9C55000C76221 /* LocalRoomView.swift in Sources */,
+				74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */,
+				74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */,
+				74927AD22BB9C56A00C76221 /* PrivateRoomView.swift in Sources */,
+				74927AD42BB9C58E00C76221 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
