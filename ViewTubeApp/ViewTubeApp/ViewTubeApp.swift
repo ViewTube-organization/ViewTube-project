@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct ViewTubeAppApp: App {
+struct ViewTubeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViewViewTube()
         }
     }
 }
