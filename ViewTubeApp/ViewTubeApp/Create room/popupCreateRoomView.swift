@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct popupCreatRoomView: View {
+struct popupCreateRoomView: View {
     var body: some View {
         VStack{
             Text("Имя комнаты")
@@ -29,6 +29,6 @@ struct popupCreatRoomView: View {
 
 struct popupCreatRoomView_Previews: PreviewProvider {
     static var previews: some View {
-        popupCreatRoomView()
+        popupCreateRoomView()
     }
 }

@@ -10,7 +10,7 @@
 		741E95142BBB05A6009E5FB0 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95132BBB05A6009E5FB0 /* Film.swift */; };
 		741E95162BBB05B2009E5FB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95152BBB05B2009E5FB0 /* User.swift */; };
 		741E951C2BBB0EA4009E5FB0 /* CreateRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */; };
-		741E95202BBB1204009E5FB0 /* popupCreatRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951F2BBB1204009E5FB0 /* popupCreatRoomView.swift */; };
+		741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */; };
 		741E95222BBB13D0009E5FB0 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95212BBB13D0009E5FB0 /* Room.swift */; };
 		74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */; };
 		74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */; };
@@ -25,7 +25,7 @@
 		741E95132BBB05A6009E5FB0 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		741E95152BBB05B2009E5FB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomButton.swift; sourceTree = "<group>"; };
-		741E951F2BBB1204009E5FB0 /* popupCreatRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupCreatRoomView.swift; sourceTree = "<group>"; };
+		741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupCreateRoomView.swift; sourceTree = "<group>"; };
 		741E95212BBB13D0009E5FB0 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		74927ABD2BB9C2DA00C76221 /* ViewTubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTubeApp.swift; sourceTree = "<group>"; };
@@ -66,12 +66,12 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
-		741E951E2BBB11E2009E5FB0 /* Creat room */ = {
+		741E95232BBB40F0009E5FB0 /* Create room */ = {
 			isa = PBXGroup;
 			children = (
-				741E951F2BBB1204009E5FB0 /* popupCreatRoomView.swift */,
+				741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */,
 			);
-			path = "Creat room";
+			path = "Create room";
 			sourceTree = "<group>";
 		};
 		74927AB42BB9C2DA00C76221 = {
@@ -93,7 +93,7 @@
 		74927ABF2BB9C2DA00C76221 /* ViewTubeApp */ = {
 			isa = PBXGroup;
 			children = (
-				741E951E2BBB11E2009E5FB0 /* Creat room */,
+				741E95232BBB40F0009E5FB0 /* Create room */,
 				74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */,
 				741E951A2BBB0E83009E5FB0 /* Buttons */,
 				741E95122BBB0199009E5FB0 /* Model */,
@@ -220,7 +220,7 @@
 				74927AD02BB9C55000C76221 /* LocalRoomView.swift in Sources */,
 				741E95142BBB05A6009E5FB0 /* Film.swift in Sources */,
 				74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */,
-				741E95202BBB1204009E5FB0 /* popupCreatRoomView.swift in Sources */,
+				741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */,
 				741E95222BBB13D0009E5FB0 /* Room.swift in Sources */,
 				74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */,
 				741E951C2BBB0EA4009E5FB0 /* CreateRoomButton.swift in Sources */,
