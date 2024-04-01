@@ -12,6 +12,7 @@
 		741E951C2BBB0EA4009E5FB0 /* CreateRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */; };
 		741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */; };
 		741E95222BBB13D0009E5FB0 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95212BBB13D0009E5FB0 /* Room.swift */; };
+		741E95252BBB458D009E5FB0 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95242BBB458D009E5FB0 /* XmarkButton.swift */; };
 		74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */; };
 		74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */; };
 		74927AC52BB9C2E100C76221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74927AC42BB9C2E100C76221 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomButton.swift; sourceTree = "<group>"; };
 		741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupCreateRoomView.swift; sourceTree = "<group>"; };
 		741E95212BBB13D0009E5FB0 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		741E95242BBB458D009E5FB0 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
 		74927ABD2BB9C2DA00C76221 /* ViewTubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTubeApp.swift; sourceTree = "<group>"; };
 		74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewViewTube.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */,
+				741E95242BBB458D009E5FB0 /* XmarkButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -93,8 +96,8 @@
 		74927ABF2BB9C2DA00C76221 /* ViewTubeApp */ = {
 			isa = PBXGroup;
 			children = (
-				741E95232BBB40F0009E5FB0 /* Create room */,
 				74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */,
+				741E95232BBB40F0009E5FB0 /* Create room */,
 				741E951A2BBB0E83009E5FB0 /* Buttons */,
 				741E95122BBB0199009E5FB0 /* Model */,
 				74927ACE2BB9C53800C76221 /* Screens */,
@@ -219,6 +222,7 @@
 			files = (
 				74927AD02BB9C55000C76221 /* LocalRoomView.swift in Sources */,
 				741E95142BBB05A6009E5FB0 /* Film.swift in Sources */,
+				741E95252BBB458D009E5FB0 /* XmarkButton.swift in Sources */,
 				74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */,
 				741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */,
 				741E95222BBB13D0009E5FB0 /* Room.swift in Sources */,

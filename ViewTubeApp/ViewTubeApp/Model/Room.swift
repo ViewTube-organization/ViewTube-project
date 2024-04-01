@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class Room: Decodable{
+class Room: ObservableObject{
     let name: String
     let isPublic: Bool
     let imageURL: String
@@ -15,6 +15,14 @@ class Room: Decodable{
     let uniqueLink: String
     var users: [User]
     
+    init(name: String, isPublic: Bool, imageURL: String, videoURL: String, uniqueLink: String, users: [User]) {
+        self.name = name
+        self.isPublic = isPublic
+        self.imageURL = imageURL
+        self.videoURL = videoURL
+        self.uniqueLink = uniqueLink
+        self.users = users
+    }
 }
 
 class LocalRooms: ObservableObject{

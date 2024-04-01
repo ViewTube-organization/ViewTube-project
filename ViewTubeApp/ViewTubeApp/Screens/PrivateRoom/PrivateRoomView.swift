@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct PrivateRoomView: View {
+    
+    @State var popupCall: Bool = false
+    
     var body: some View {
-        Button{
-            print("create room")
-        }label:{
-            CreateRoomButton()
+        ZStack{
+            NavigationView{
+                Button{
+                    popupCall.toggle()
+                }label:{
+                    CreateRoomButton()
+                }
+            }
+            .blur(radius: popupCall ? 20 : 0)
+            
+            if popupCall{
+                popupCreateRoomView(popupCall: $popupCall)
+            }
         }
+        
     }
 }
 
