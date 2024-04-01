@@ -9,7 +9,11 @@ import SwiftUI
 
 struct PrivateRoomView: View {
     var body: some View {
-        Text("Private room")
+        Button{
+            print("create room")
+        }label:{
+            CreateRoomButton()
+        }
     }
 }
 
