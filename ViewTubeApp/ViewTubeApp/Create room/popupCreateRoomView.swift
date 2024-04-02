@@ -9,8 +9,8 @@ import SwiftUI
 
 struct popupCreateRoomView: View {
     
+    @EnvironmentObject var rooms: Rooms
     @Binding var popupCall: Bool
-    
     @State var room = MockData.sampleRoom
     
     var body: some View {
@@ -39,10 +39,12 @@ struct popupCreateRoomView: View {
             Spacer()
             
             Button{
-                print("create")
+                room.isPublic ? rooms.localRooms.insert(room, at: 0) : rooms.privateRooms.insert(room, at: 0)
+                popupCall.toggle()
+                print("local: \(rooms.localRooms.count)")
+                print("private: \(rooms.privateRooms.count)")
             }label:{
                 Text("Create room")
-                    
             }
             .buttonStyle(.bordered)
             .tint(.green)

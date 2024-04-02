@@ -7,39 +7,31 @@
 
 import SwiftUI
 
-struct Room{
+struct Room: Hashable{
     var name: String = ""
     var isPublic: Bool = true
     var imageURL: String = ""
     var videoURL: String = ""
     var uniqueLink: String = ""
     var users: [User] = []
-}
-
-class LocalRooms: ObservableObject{
     
-    @Published var numberUsers: [User] = []
-    @Published var rooms: [Room] = []
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(name)
+            hasher.combine(videoURL)
+        }
     
-    func addRoom(_ room: Room){
-        rooms.insert(room, at: 0)
-    }
-    
-    func deleteRoom(_ offsets: IndexSet){
-        rooms.remove(atOffsets: offsets)
+    static func == (lhs: Room, rhs: Room) -> Bool {
+        return lhs.name == rhs.name && lhs.videoURL == rhs.videoURL
     }
 }
 
-class PrivateRooms: ObservableObject{
+class Rooms: ObservableObject{
     
-    @Published var numberUsers: [User] = []
-    @Published var rooms: [Room] = []
+    @Published var numberUsersLocalRoom: [User] = []
+    @Published var localRooms: [Room] = []
     
-    func addRoom(_ room: Room){
-        rooms.insert(room, at: 0)
-    }
+    @Published var numberUsersPrivateRoom: [User] = []
+    @Published var privateRooms: [Room] = []
     
-    func deleteRoom(_ offsets: IndexSet){
-        rooms.remove(atOffsets: offsets)
-    }
 }
+

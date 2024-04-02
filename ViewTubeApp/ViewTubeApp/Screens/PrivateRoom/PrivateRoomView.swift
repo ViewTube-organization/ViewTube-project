@@ -9,18 +9,29 @@ import SwiftUI
 
 struct PrivateRoomView: View {
     
+    @EnvironmentObject var rooms: Rooms
     @State var popupCall: Bool = false
     
     var body: some View {
         ZStack{
-            NavigationView{
+            VStack{
+                NavigationView{
+                    List{
+                        ForEach (rooms.privateRooms, id: \.self){room in
+                            Text(room.name)
+                            
+                        }
+                    }
+                    .navigationTitle("Приватные комнаты")
+                }
+                .blur(radius: popupCall ? 20 : 0)
+                
                 Button{
                     popupCall.toggle()
                 }label:{
                     CreatePopupViewButton()
                 }
             }
-            .blur(radius: popupCall ? 20 : 0)
             
             if popupCall{
                 popupCreateRoomView(popupCall: $popupCall)

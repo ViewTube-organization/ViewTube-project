@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ViewTubeApp: App {
+    
+    var rooms = Rooms()
     var body: some Scene {
         WindowGroup {
             TabViewViewTube()
+                .environmentObject(rooms)
         }
     }
 }
