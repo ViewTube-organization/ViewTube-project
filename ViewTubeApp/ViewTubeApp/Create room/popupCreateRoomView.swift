@@ -41,8 +41,6 @@ struct popupCreateRoomView: View {
             Button{
                 room.isPublic ? rooms.localRooms.insert(room, at: 0) : rooms.privateRooms.insert(room, at: 0)
                 popupCall.toggle()
-                print("local: \(rooms.localRooms.count)")
-                print("private: \(rooms.privateRooms.count)")
             }label:{
                 Text("Create room")
             }

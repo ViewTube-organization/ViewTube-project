@@ -11,7 +11,7 @@ struct CreatePopupViewButton: View {
     var body: some View {
         ZStack{
             Circle()
-                .fill(Color.black.opacity(0.25))
+                .fill(Color.black.opacity(0.15))
                 .frame(width: 60)
             
             Image(systemName: "plus")

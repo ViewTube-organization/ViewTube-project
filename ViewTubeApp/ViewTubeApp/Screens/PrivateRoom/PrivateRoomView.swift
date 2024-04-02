@@ -14,7 +14,7 @@ struct PrivateRoomView: View {
     
     var body: some View {
         ZStack{
-            VStack{
+            ZStack{
                 NavigationView{
                     List{
                         ForEach (rooms.privateRooms, id: \.self){room in
@@ -31,6 +31,9 @@ struct PrivateRoomView: View {
                 }label:{
                     CreatePopupViewButton()
                 }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .frame(maxHeight: .infinity, alignment: .bottom)
             }
             
             if popupCall{
