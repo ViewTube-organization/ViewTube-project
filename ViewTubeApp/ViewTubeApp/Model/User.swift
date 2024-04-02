@@ -7,9 +7,18 @@
 
 import SwiftUI
 
-struct User{
+struct User: Hashable{
     var firstName = ""
     var lastName = ""
     var email = ""
-    var birthdate = Date()
+    var imageURL = ""
+    
+    func hash(into hasher: inout Hasher) {
+            hasher.combine(firstName)
+            hasher.combine(imageURL)
+        }
+    
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.imageURL == rhs.imageURL
+    }
 }

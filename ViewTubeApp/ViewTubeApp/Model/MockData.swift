@@ -14,4 +14,16 @@ struct MockData{
                                  videoURL: "",
                                  uniqueLink: "",
                                  users: [])
+    
+    static let sampleUser = User(firstName: "Ivan",
+                                 lastName: "Ivanov",
+                                 email: "Ivanov@gmail.com",
+                                 imageURL: "Person")
+    
+    static let exampleRoom = Room(name: "name room",
+                                 isPublic: false,
+                                 imageURL: "imageErrorFilm",
+                                 videoURL: "https://www.youtube.com/watch?v=EeARyFrZsnU&ab_channel=MerionAcademy",
+                                 uniqueLink: "",
+                                 users: [sampleUser, sampleUser, sampleUser])
 }
