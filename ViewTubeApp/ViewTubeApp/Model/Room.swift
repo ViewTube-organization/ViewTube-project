@@ -7,22 +7,13 @@
 
 import SwiftUI
 
-class Room: ObservableObject{
-    let name: String
-    let isPublic: Bool
-    let imageURL: String
-    let videoURL: String
-    let uniqueLink: String
-    var users: [User]
-    
-    init(name: String, isPublic: Bool, imageURL: String, videoURL: String, uniqueLink: String, users: [User]) {
-        self.name = name
-        self.isPublic = isPublic
-        self.imageURL = imageURL
-        self.videoURL = videoURL
-        self.uniqueLink = uniqueLink
-        self.users = users
-    }
+struct Room{
+    var name: String = ""
+    var isPublic: Bool = true
+    var imageURL: String = ""
+    var videoURL: String = ""
+    var uniqueLink: String = ""
+    var users: [User] = []
 }
 
 class LocalRooms: ObservableObject{

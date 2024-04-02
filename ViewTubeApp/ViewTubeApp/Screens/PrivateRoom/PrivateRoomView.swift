@@ -17,7 +17,7 @@ struct PrivateRoomView: View {
                 Button{
                     popupCall.toggle()
                 }label:{
-                    CreateRoomButton()
+                    CreatePopupViewButton()
                 }
             }
             .blur(radius: popupCall ? 20 : 0)

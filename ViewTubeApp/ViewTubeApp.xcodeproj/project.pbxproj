@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		741E95142BBB05A6009E5FB0 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95132BBB05A6009E5FB0 /* Film.swift */; };
 		741E95162BBB05B2009E5FB0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95152BBB05B2009E5FB0 /* User.swift */; };
-		741E951C2BBB0EA4009E5FB0 /* CreateRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */; };
+		741E951C2BBB0EA4009E5FB0 /* CreatePopupViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951B2BBB0EA4009E5FB0 /* CreatePopupViewButton.swift */; };
 		741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */; };
 		741E95222BBB13D0009E5FB0 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95212BBB13D0009E5FB0 /* Room.swift */; };
 		741E95252BBB458D009E5FB0 /* XmarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95242BBB458D009E5FB0 /* XmarkButton.swift */; };
+		741E95272BBC180F009E5FB0 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95262BBC180F009E5FB0 /* MockData.swift */; };
+		741E95292BBC1A24009E5FB0 /* CreateRoomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E95282BBC1A24009E5FB0 /* CreateRoomButton.swift */; };
 		74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */; };
 		74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */; };
 		74927AC52BB9C2E100C76221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74927AC42BB9C2E100C76221 /* Assets.xcassets */; };
@@ -25,10 +27,12 @@
 /* Begin PBXFileReference section */
 		741E95132BBB05A6009E5FB0 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		741E95152BBB05B2009E5FB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomButton.swift; sourceTree = "<group>"; };
+		741E951B2BBB0EA4009E5FB0 /* CreatePopupViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePopupViewButton.swift; sourceTree = "<group>"; };
 		741E951F2BBB1204009E5FB0 /* popupCreateRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupCreateRoomView.swift; sourceTree = "<group>"; };
 		741E95212BBB13D0009E5FB0 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		741E95242BBB458D009E5FB0 /* XmarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmarkButton.swift; sourceTree = "<group>"; };
+		741E95262BBC180F009E5FB0 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		741E95282BBC1A24009E5FB0 /* CreateRoomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomButton.swift; sourceTree = "<group>"; };
 		74927ABD2BB9C2DA00C76221 /* ViewTubeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewTubeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74927AC02BB9C2DA00C76221 /* ViewTubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTubeApp.swift; sourceTree = "<group>"; };
 		74927AC22BB9C2DA00C76221 /* TabViewViewTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewViewTube.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 				741E95132BBB05A6009E5FB0 /* Film.swift */,
 				741E95152BBB05B2009E5FB0 /* User.swift */,
 				741E95212BBB13D0009E5FB0 /* Room.swift */,
+				741E95262BBC180F009E5FB0 /* MockData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -63,8 +68,9 @@
 		741E951A2BBB0E83009E5FB0 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				741E951B2BBB0EA4009E5FB0 /* CreateRoomButton.swift */,
+				741E951B2BBB0EA4009E5FB0 /* CreatePopupViewButton.swift */,
 				741E95242BBB458D009E5FB0 /* XmarkButton.swift */,
+				741E95282BBC1A24009E5FB0 /* CreateRoomButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -221,13 +227,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				74927AD02BB9C55000C76221 /* LocalRoomView.swift in Sources */,
+				741E95272BBC180F009E5FB0 /* MockData.swift in Sources */,
 				741E95142BBB05A6009E5FB0 /* Film.swift in Sources */,
+				741E95292BBC1A24009E5FB0 /* CreateRoomButton.swift in Sources */,
 				741E95252BBB458D009E5FB0 /* XmarkButton.swift in Sources */,
 				74927AC32BB9C2DA00C76221 /* TabViewViewTube.swift in Sources */,
 				741E95202BBB1204009E5FB0 /* popupCreateRoomView.swift in Sources */,
 				741E95222BBB13D0009E5FB0 /* Room.swift in Sources */,
 				74927AC12BB9C2DA00C76221 /* ViewTubeApp.swift in Sources */,
-				741E951C2BBB0EA4009E5FB0 /* CreateRoomButton.swift in Sources */,
+				741E951C2BBB0EA4009E5FB0 /* CreatePopupViewButton.swift in Sources */,
 				74927AD22BB9C56A00C76221 /* PrivateRoomView.swift in Sources */,
 				74927AD42BB9C58E00C76221 /* MessageView.swift in Sources */,
 				741E95162BBB05B2009E5FB0 /* User.swift in Sources */,
