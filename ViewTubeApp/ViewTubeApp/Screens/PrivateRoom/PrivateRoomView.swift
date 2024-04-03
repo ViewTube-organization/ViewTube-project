@@ -18,7 +18,7 @@ struct PrivateRoomView: View {
                 NavigationView{
                     List{
                         ForEach (rooms.privateRooms, id: \.self){room in
-                            Text(room.name)
+                            cellRoom(room: room)
                             
                         }
                     }

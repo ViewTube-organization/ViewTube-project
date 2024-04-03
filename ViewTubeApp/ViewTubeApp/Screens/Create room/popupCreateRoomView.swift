@@ -39,8 +39,13 @@ struct popupCreateRoomView: View {
             Spacer()
             
             Button{
+                
                 room.isPublic ? rooms.localRooms.insert(room, at: 0) : rooms.privateRooms.insert(room, at: 0)
+                
+                rooms.privateRooms[0].users.append(MockData.sampleUser)
+
                 popupCall.toggle()
+                
             }label:{
                 Text("Create room")
             }

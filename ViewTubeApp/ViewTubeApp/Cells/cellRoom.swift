@@ -9,11 +9,11 @@ import SwiftUI
 
 struct cellRoom: View {
     
-    let room: Room = MockData.exampleRoom
+    let room: Room
     
     var body: some View {
         HStack{
-            Image(room.imageURL)
+            Image(room.imageURL.isEmpty ? "imageErrorFilm" : room.imageURL)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 
@@ -44,6 +44,6 @@ struct cellRoom: View {
 
 struct cellRoom_Previews: PreviewProvider {
     static var previews: some View {
-        cellRoom()
+        cellRoom(room: MockData.exampleRoom)
     }
 }
